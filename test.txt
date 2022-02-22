@@ -1,0 +1,10 @@
+1:切换到新分支
+git checkout test
+2:提交新分支
+git push --set-upstream origin test
+3:切换回master
+git checkout master
+4:将新分支合并到master
+git merge test
+5:提交
+git push origin master
