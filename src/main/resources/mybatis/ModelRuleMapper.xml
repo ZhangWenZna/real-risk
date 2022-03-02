@@ -2,3 +2,17 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zwz.jxone.dao.mapper.ModelRuleMapper">
+    <select id="selectById" resultType="com.zwz.jxone.po.ModelRulePO">
+        select * from model_rule where id = #{id}
+    </select>
+
+    <delete id="deleteById" >
+        delete from model_rule where id = #{id}
+    </delete>
+
+    <!--    增加update mapper -->
+<!--    增加update mapper -->
+
+</mapper>
