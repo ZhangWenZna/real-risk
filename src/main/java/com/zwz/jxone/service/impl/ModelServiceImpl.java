@@ -1,7 +1,2 @@
-package com.zwz.jxone.service.impl;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class ModelServiceImpl {
+package com.zwz.jxone.service.impl;public class ModelServiceImpl {
 }
