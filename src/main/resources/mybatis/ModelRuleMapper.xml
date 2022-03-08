@@ -19,8 +19,9 @@
         where ID=#{id}
     </insert>
     <!--插入数据-->
-    <insert id="insert" parameterType="com.zwz.jxone.po.ModelRulePo">
-        insert into model_rule values(#{modelId},#{strategyId},#{name},#{fieldName},#{scripts},#{initScore},#{baseNum},#{operator}
+    <insert id="insert" parameterType="com.zwz.jxone.po.ModelRulePO">
+        insert into model_rule(MODEL_ID,strategy_id,NAME,field_Name,SCRIPTS,INIT_SCORE,BASE_NUM,OPERATOR,RATE,STATUS,RULE_DEFINITION)
+        values(#{modelId},#{strategyId},#{name},#{fieldName},#{scripts},#{initScore},#{baseNum},#{operator}
         ,#{rate},#{stayus},#{ruleDefinition})
     </insert>
 

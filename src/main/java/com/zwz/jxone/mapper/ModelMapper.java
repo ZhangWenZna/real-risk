@@ -1,6 +1,6 @@
 package com.zwz.jxone.mapper;
 
-import com.zwz.jxone.po.ModelPo;
+import com.zwz.jxone.po.ModelPO;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -8,19 +8,19 @@ public interface ModelMapper {
     /**
      *添加
      */
-    ModelPo insert(ModelPo modelPo);
+    ModelPO insert(ModelPO modelPo);
     /**
      * 删除
      */
-    ModelPo deleteById(Integer id);
+    ModelPO deleteById(Integer id);
     /**
      * 修改
      */
-    ModelPo updateById(Integer id);
+    ModelPO updateById(ModelPO modelPO);
     /**
      * 查找
      */
-    ModelPo servicByid(Integer id);
+    ModelPO servicByid(Integer id);
 
 
 }

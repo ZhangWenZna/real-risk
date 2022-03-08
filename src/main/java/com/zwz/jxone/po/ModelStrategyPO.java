@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 /**
  * 策略表
  */
-public class ModelStrategyPo {
+public class ModelStrategyPO {
     /**
      * id主键
      */
@@ -43,9 +43,9 @@ public class ModelStrategyPo {
      */
     private Timestamp updataTime;
 
-    public ModelStrategyPo(){}
+    public ModelStrategyPO(){}
 
-    public ModelStrategyPo(Integer id, String strategyName, String label, Integer modelId, String comment, Double score, Integer status, Timestamp createTime, Timestamp updataTime) {
+    public ModelStrategyPO(Integer id, String strategyName, String label, Integer modelId, String comment, Double score, Integer status, Timestamp createTime, Timestamp updataTime) {
         this.id = id;
         this.strategyName = strategyName;
         this.label = label;

@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 /**
  * 预处理字段表
  */
-public class ModelRulePo {
+public class ModelRulePO {
     /**
      * 用户ID，主键
      */
@@ -62,9 +62,9 @@ public class ModelRulePo {
      */
     private Timestamp updataTime;
 
-    public ModelRulePo(){}
+    public ModelRulePO(){}
 
-    public ModelRulePo(Integer id, Integer modelId, Integer strategyId, String name, String fieldName, String scripts, Integer initScore, Integer baseNum, String operator, Integer rate, Integer stayus, String ruleDefinition, Timestamp createTime, Timestamp updataTime) {
+    public ModelRulePO(Integer id, Integer modelId, Integer strategyId, String name, String fieldName, String scripts, Integer initScore, Integer baseNum, String operator, Integer rate, Integer stayus, String ruleDefinition, Timestamp createTime, Timestamp updataTime) {
 
         this.id = id;
         this.modelId = modelId;

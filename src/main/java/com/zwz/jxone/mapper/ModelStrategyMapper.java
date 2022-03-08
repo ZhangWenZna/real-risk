@@ -1,5 +1,5 @@
 package com.zwz.jxone.mapper;
-import com.zwz.jxone.po.ModelStrategyPo;
+import com.zwz.jxone.po.ModelStrategyPO;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -7,17 +7,17 @@ public interface ModelStrategyMapper {
     /**
      *添加
      */
-    ModelStrategyPo insert(ModelStrategyPo modelPo);
+    ModelStrategyPO insert(ModelStrategyPO modelPo);
     /**
      * 删除
      */
-    ModelStrategyPo deleteById(Integer id);
+    ModelStrategyPO deleteById(Integer id);
     /**
      * 修改
      */
-    ModelStrategyPo updateById(ModelStrategyPo modelStrategyPo);
+    ModelStrategyPO updateById(ModelStrategyPO modelStrategyPo);
     /**
      * 查找
      */
-    ModelStrategyPo servicByid(Integer id);
+    ModelStrategyPO servicByid(Integer id);
 }

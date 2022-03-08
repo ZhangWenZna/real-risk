@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zwz.jxone.dao.mapper.ModelStrategyMapper">
+    <select id="selectById" resultType="com.zwz.jxone.po.ModelStrategyPO">
+        select * from model_strategy where id = #{id}
+    </select>
+
+    <delete id="deleteById" >
+        delete from model_strategy where id = #{id}
+    </delete>
+
+    <!--修改数据-->
+    <update id="updateById" parameterType="com.zwz.jxone.po.ModelStrategyPO">
+        update model_strategy set strategy_NAME=#{strategyName},LABEL=#{label},MODEL_ID=#{modelId},COMMENT=#{comment},score=#{score},
+        status=#{status} where ID=#{id}
+    </update>
+    <!--插入数据-->
+    <insert id="insert" parameterType="com.zwz.jxone.po.ModelStrategyPO">
+        insert into model_strategy(strategy_NAME,LABEL,MODEL_ID,COMMENT,score,status)
+        values(#{strategyName},#{label},#{modelId},#{comment},#{score},#{status})
+    </insert>
+
+</mapper>

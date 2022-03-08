@@ -1,24 +1,24 @@
 package com.zwz.jxone.service;
 
-import com.zwz.jxone.po.ModelPo;
-import com.zwz.jxone.po.ModelRulePo;
+import com.zwz.jxone.po.ModelPO;
+import com.zwz.jxone.po.ModelRulePO;
 
 public interface ModelRuleService {
     /**
      *添加
      */
-    ModelRulePo insert(ModelRulePo modelRulePo);
+    ModelRulePO insert(ModelRulePO modelRulePo);
     /**
      * 删除
      */
-    ModelRulePo deleteById(Integer id);
+    ModelRulePO deleteById(Integer id);
     /**
      * 修改
      */
-    ModelRulePo updateById(ModelRulePo modelRulePo);
+    ModelRulePO updateById(ModelRulePO modelRulePo);
     /**
      * 查找
      */
-    ModelRulePo servicByid(Integer id);
+    ModelRulePO servicByid(Integer id);
 
 }

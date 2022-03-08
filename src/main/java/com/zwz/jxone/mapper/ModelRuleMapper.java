@@ -1,7 +1,7 @@
 package com.zwz.jxone.mapper;
 
 
-import com.zwz.jxone.po.ModelRulePo;
+import com.zwz.jxone.po.ModelRulePO;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -9,17 +9,18 @@ public interface ModelRuleMapper {
     /**
      *添加
      */
-    ModelRulePo insert(ModelRulePo modelPo);
+    ModelRulePO insert(ModelRulePO modelPo);
     /**
      * 删除
      */
-    ModelRulePo deleteById(Integer id);
+    ModelRulePO deleteById(Integer id);
     /**
      * 修改
+     * @param id
      */
-    ModelRulePo updateById(Integer id);
+    ModelRulePO updateById(ModelRulePO id);
     /**
      * 查找
      */
-    ModelRulePo servicByid(Integer id);
+    ModelRulePO servicByid(Integer id);
 }

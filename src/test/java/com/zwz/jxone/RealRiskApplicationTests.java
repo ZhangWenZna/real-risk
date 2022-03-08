@@ -1,6 +1,7 @@
 package com.zwz.jxone;
 
-import com.zwz.jxone.po.ModelRulePo;
+import com.zwz.jxone.po.ModelPO;
+import com.zwz.jxone.po.ModelRulePO;
 import com.zwz.jxone.service.ModelRuleService;
 import com.zwz.jxone.service.ModelService;
 import org.junit.jupiter.api.Test;
@@ -14,11 +15,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 class RealRiskApplicationTests {
 	@Autowired
 	private ModelRuleService modelRuleService;
+	@Autowired
+	private ModelService modelService;
 
 	@Test
 	void contextLoads() {
-		ModelRulePo modelRulePo = modelRuleService.servicByid(1);
-		System.out.println(modelRulePo);
+		ModelPO modelPo = modelService.servicByid(1);
+		System.out.println(modelPo);
 	}
 
 }
