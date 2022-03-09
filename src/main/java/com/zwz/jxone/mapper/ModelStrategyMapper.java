@@ -19,5 +19,5 @@ public interface ModelStrategyMapper {
     /**
      * 查找
      */
-    ModelStrategyPO servicByid(Integer id);
+    ModelStrategyPO selectById(Integer id);
 }

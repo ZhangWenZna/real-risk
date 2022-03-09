@@ -2,13 +2,13 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="modelMapper">
+<mapper namespace="com.zwz.jxone.dao.mapper.ModelMapper">
     <!--插入数据-->
     <insert id="insert" parameterType="com.zwz.jxone.po.ModelPO">
         insert into model(MODEL_NAME,LABEL,STATUS) value(#{modelName},#{label},#{status})
     </insert>
     <!--修改数据-->
-    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelPo">
+    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelPO">
         update model set MODEL_ID=#{modelId},LABEL=#{label},STATUS=#{status} ID=#{id}
     </insert>
     <!--删除数据-->
@@ -16,7 +16,7 @@
         delete from model where ID=#{id}
     </delete>
     <!--查找数据-->
-    <insert id="servicByid" parameterType="java.lang.Integer">
+    <insert id="selectById" parameterType="java.lang.Integer">
         seleect * from model where ID=#{id}
     </insert>
 

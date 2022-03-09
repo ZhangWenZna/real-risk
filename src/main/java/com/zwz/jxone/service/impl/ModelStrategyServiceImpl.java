@@ -27,7 +27,7 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     }
 
     @Override
-    public ModelStrategyPO servicByid(Integer id) {
-        return modelStrategyMapper.servicByid(id);
+    public ModelStrategyPO selectById(Integer id) {
+        return modelStrategyMapper.selectById(id);
     }
 }

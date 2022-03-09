@@ -20,7 +20,7 @@ public interface ModelMapper {
     /**
      * 查找
      */
-    ModelPO servicByid(Integer id);
+    ModelPO selectById(Integer id);
 
 
 }

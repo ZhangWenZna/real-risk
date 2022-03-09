@@ -22,5 +22,5 @@ public interface ModelRuleMapper {
     /**
      * 查找
      */
-    ModelRulePO servicByid(Integer id);
+    ModelRulePO selectById(Integer id);
 }

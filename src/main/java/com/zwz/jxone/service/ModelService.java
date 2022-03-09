@@ -18,6 +18,6 @@ public interface ModelService {
     /**
      * 查找
      */
-    ModelPO servicByid(Integer id);
+    ModelPO selectById(Integer id);
 
 }

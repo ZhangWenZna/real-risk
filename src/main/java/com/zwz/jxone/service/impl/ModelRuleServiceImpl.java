@@ -29,7 +29,7 @@ public class ModelRuleServiceImpl implements ModelRuleService {
     }
 
     @Override
-    public ModelRulePO servicByid(Integer id) {
-        return modelRuleMapper.servicByid(id);
+    public ModelRulePO selectById(Integer id) {
+        return modelRuleMapper.selectById(id);
     }
 }

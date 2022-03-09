@@ -19,6 +19,6 @@ public interface ModelRuleService {
     /**
      * 查找
      */
-    ModelRulePO servicByid(Integer id);
+    ModelRulePO selectById(Integer id);
 
 }

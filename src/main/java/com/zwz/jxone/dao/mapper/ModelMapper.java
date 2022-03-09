@@ -11,8 +11,9 @@ import org.springframework.stereotype.Repository;
 public interface ModelMapper {
     Integer insertMode();
 
-    ModelPO selectByID(Long id);
+    //ModelPO selectById(Long id);
     ModelPO updateById(ModelPO modelPO);
-    Integer deleteById(Long id);
+    ModelPO deleteById(Long id);
+    ModelPO insert(ModelPO modelPO);
 
 }
