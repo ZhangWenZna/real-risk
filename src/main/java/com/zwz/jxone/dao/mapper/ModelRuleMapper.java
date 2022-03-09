@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ModelRuleMapper {
 
-  Integer insertModelRule();
+  Integer insert(ModelRulePO modelRulePO);
 
   ModelRulePO selectById(Long id);
 

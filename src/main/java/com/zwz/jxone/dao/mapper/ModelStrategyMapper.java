@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * ming
  */
 @Repository
-public interface ModelStragegyMapper {
+public interface ModelStrategyMapper {
     Integer insertModelStragegy();
     ModelStrategyPO selectById(Long id);
     ModelStrategyPO updateById(ModelStrategyPO modelRulePO);
