@@ -16,4 +16,7 @@ public interface ModelRuleMapper {
 
   ModelRulePO updateById(ModelRulePO modelRulePO);
   Integer deleteById(Long id);
+
+
+
 }

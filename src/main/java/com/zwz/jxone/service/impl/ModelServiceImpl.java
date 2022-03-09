@@ -27,7 +27,7 @@ public class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public ModelPO servicByid(Integer id) {
-        return modelMapper.servicByid(id);
+    public ModelPO selectById(Integer id) {
+        return modelMapper.selectById(id);
     }
 }

@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zwz.jxone.mapper.ModelRuleMapper">
-    <select id="selectById" resultType="com.zwz.jxone.po.ModelRulePo">
+<mapper namespace="com.zwz.jxone.dao.mapper.ModelRuleMapper">
+    <select id="selectById" resultType="com.zwz.jxone.po.ModelRulePO">
         select * from model_rule where id = #{id}
     </select>
 
@@ -13,7 +13,7 @@
     </delete>
 
     <!--修改数据-->
-    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelRulePo">
+    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelRulePO">
         update model_rule set MODEL_ID=#{modelId},strategy_id=#{strategyId},NAME=#{name},field_Name=#{fieldName},SCRIPTS=#{scripts},
         INIT_SCORE=#{initScore},BASE_NUM=#{baseNum},OPERATOR=#{operator},RATE=#{rate},STATUS=#{stayus},RULE_DEFINITION=#{ruleDefinition}
         where ID=#{id}

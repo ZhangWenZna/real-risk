@@ -20,7 +20,7 @@ class RealRiskApplicationTests {
 
 	@Test
 	void contextLoads() {
-		ModelPO modelPo = modelService.servicByid(1);
+		ModelPO modelPo = modelService.selectById(1);
 		System.out.println(modelPo);
 	}
 
