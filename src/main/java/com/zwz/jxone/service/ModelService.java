@@ -6,7 +6,7 @@ public interface ModelService {
     /**
      *添加
      */
-    ModelPO insert(ModelPO modelPo);
+    ModelPO insert(ModelPO modelPO);
     /**
      * 删除
      */

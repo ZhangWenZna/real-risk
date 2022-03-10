@@ -24,18 +24,22 @@ public class ModelController {
   }
 
   @RequestMapping(method = RequestMethod.POST)
-  public Integer insertModel(@RequestBody ModelPO modelPO){
-   return null;
+  public ModelPO insertModel(@RequestBody ModelPO modelPO){
+    ModelPO modelPO1=modelService.insert(modelPO);
+
+    return modelPO1;
   }
 
   @RequestMapping(method = RequestMethod.PUT)
-  public Integer updateModelById(@RequestBody ModelPO modelPO){
-    return null;
+  public ModelPO updateModelById(@RequestBody ModelPO modelPO){
+    ModelPO modelPO1=modelService.updateById(modelPO);
+    return modelPO1;
   }
 
 
   @RequestMapping(method = RequestMethod.DELETE)
-  public Integer deleteModelById(@RequestBody ModelPO modelPO){
-    return null;
+  public ModelPO deleteModelById(@RequestBody Integer id){
+    ModelPO modelPO=modelService.deleteById(id);
+    return modelPO;
   }
 }

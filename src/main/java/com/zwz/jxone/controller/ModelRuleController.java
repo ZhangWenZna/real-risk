@@ -3,6 +3,7 @@ package com.zwz.jxone.controller;
 import com.zwz.jxone.po.ModelRulePO;
 import com.zwz.jxone.service.ModelRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.relational.core.sql.In;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,19 +18,23 @@ public class ModelRuleController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Integer insertModelRule(@RequestBody ModelRulePO modelRulePO){
-        return null;
+    public ModelRulePO insertModelRule(@RequestBody ModelRulePO modelRulePO){
+        ModelRulePO modelRulePO1=modelRuleService.insert(modelRulePO);
+        return modelRulePO1;
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    public Integer updateModelRuleById(@RequestBody ModelRulePO modelRulePO){
-        return null;
+    public ModelRulePO updateModelRuleById(@RequestBody ModelRulePO modelRulePO){
+        ModelRulePO modelRulePO1=modelRuleService.updateById(modelRulePO);
+        return modelRulePO1;
     }
 
 
     @RequestMapping(method = RequestMethod.DELETE)
-    public Integer deleteModelRuleById(@RequestBody ModelRulePO modelRulePO){
-        return null;
+    public ModelRulePO deleteModelRuleById(@RequestBody Integer id){
+        ModelRulePO modelRulePO1=modelRuleService.deleteById(id);
+
+        return modelRulePO1;
     }
 
 }
