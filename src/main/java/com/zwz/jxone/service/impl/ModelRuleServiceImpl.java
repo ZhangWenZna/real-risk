@@ -6,6 +6,8 @@ import com.zwz.jxone.service.ModelRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ModelRuleServiceImpl implements ModelRuleService {
     @Autowired
@@ -31,5 +33,10 @@ public class ModelRuleServiceImpl implements ModelRuleService {
     @Override
     public ModelRulePO selectById(Integer id) {
         return modelRuleMapper.selectById(id);
+    }
+
+    @Override
+    public List<ModelRulePO> listRulesByStrategyId(Integer strategyId) {
+        return modelRuleMapper.listRulesByStrategyId(strategyId);
     }
 }
