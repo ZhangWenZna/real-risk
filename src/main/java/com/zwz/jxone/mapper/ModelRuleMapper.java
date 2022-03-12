@@ -4,6 +4,8 @@ package com.zwz.jxone.mapper;
 import com.zwz.jxone.po.ModelRulePO;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ModelRuleMapper {
     /**
@@ -23,4 +25,6 @@ public interface ModelRuleMapper {
      * 查找
      */
     ModelRulePO selectById(Integer id);
+
+  List<ModelRulePO> listRulesByStrategyId(Integer strategyId);
 }

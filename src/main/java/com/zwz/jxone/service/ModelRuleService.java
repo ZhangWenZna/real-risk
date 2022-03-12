@@ -3,6 +3,8 @@ package com.zwz.jxone.service;
 import com.zwz.jxone.po.ModelPO;
 import com.zwz.jxone.po.ModelRulePO;
 
+import java.util.List;
+
 public interface ModelRuleService {
     /**
      *添加
@@ -21,4 +23,5 @@ public interface ModelRuleService {
      */
     ModelRulePO selectById(Integer id);
 
+  List<ModelRulePO> listRulesByStrategyId(Integer strategyId);
 }

@@ -2,9 +2,12 @@ package com.zwz.jxone.controller;
 
 import com.zwz.jxone.po.ModelRulePO;
 import com.zwz.jxone.service.ModelRuleService;
+import com.zwz.jxone.vo.StrategyReqVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.relational.core.sql.In;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path ="ModelRules")
@@ -35,6 +38,13 @@ public class ModelRuleController {
         ModelRulePO modelRulePO1=modelRuleService.deleteById(id);
 
         return modelRulePO1;
+    }
+
+    @RequestMapping(method = RequestMethod.GET,path = "/strategies/")
+    public List<ModelRulePO> listRulesByStrategyId(@RequestBody StrategyReqVO strategyReqVO){
+        List<ModelRulePO> modelRulePOs=modelRuleService.listRulesByStrategyId(strategyReqVO.getStrategyId());
+
+        return modelRulePOs;
     }
 
 }
