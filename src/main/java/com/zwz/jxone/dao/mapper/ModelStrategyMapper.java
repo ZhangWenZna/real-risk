@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ModelStrategyMapper {
-    Integer insert(ModelStrategyPO modelStrategyPO);
+    ModelStrategyPO insert(ModelStrategyPO modelStrategyPO);
     ModelStrategyPO selectById(Long id);
     ModelStrategyPO updateById(ModelStrategyPO modelRulePO);
     ModelStrategyPO deleteById(Long id);

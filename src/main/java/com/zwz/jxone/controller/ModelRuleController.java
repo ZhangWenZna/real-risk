@@ -15,29 +15,29 @@ public class ModelRuleController {
     @Autowired
     private ModelRuleService modelRuleService;
     @RequestMapping(method = RequestMethod.GET)
-    public ModelRulePO selectById(@PathVariable Integer id){
+    public ModelRulePO selectById(@PathVariable Long id){
         ModelRulePO modelRulePO=modelRuleService.selectById(id);
         return modelRulePO;
     }
 
     @RequestMapping(method = RequestMethod.POST)
     public ModelRulePO insertModelRule(@RequestBody ModelRulePO modelRulePO){
-        ModelRulePO modelRulePO1=modelRuleService.insert(modelRulePO);
-        return modelRulePO1;
+        ModelRulePO modelRulePOs=modelRuleService.insert(modelRulePO);
+        return modelRulePOs;
     }
 
     @RequestMapping(method = RequestMethod.PUT)
     public ModelRulePO updateModelRuleById(@RequestBody ModelRulePO modelRulePO){
-        ModelRulePO modelRulePO1=modelRuleService.updateById(modelRulePO);
-        return modelRulePO1;
+        ModelRulePO modelRulePOs=modelRuleService.updateById(modelRulePO);
+        return modelRulePOs;
     }
 
 
     @RequestMapping(method = RequestMethod.DELETE)
-    public ModelRulePO deleteModelRuleById(@RequestBody Integer id){
-        ModelRulePO modelRulePO1=modelRuleService.deleteById(id);
+    public ModelRulePO deleteModelRuleById(@RequestBody Long id){
+        ModelRulePO modelRulePOs=modelRuleService.deleteById(id);
 
-        return modelRulePO1;
+        return modelRulePOs;
     }
 
     @RequestMapping(method = RequestMethod.GET,path = "/strategies/")

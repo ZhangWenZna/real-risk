@@ -13,7 +13,7 @@ public interface ModelRuleService {
     /**
      * 删除
      */
-    ModelRulePO deleteById(Integer id);
+    ModelRulePO deleteById(Long id);
     /**
      * 修改
      */
@@ -21,7 +21,7 @@ public interface ModelRuleService {
     /**
      * 查找
      */
-    ModelRulePO selectById(Integer id);
+    ModelRulePO selectById(Long id);
 
   List<ModelRulePO> listRulesByStrategyId(Integer strategyId);
 }

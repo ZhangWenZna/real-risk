@@ -19,7 +19,7 @@ public class ModelStrategyController {
     @Autowired
     private ModelStrategyService modelStrategyService;
     @RequestMapping(method = RequestMethod.GET)
-    public ModelStrategyPO selectById(@PathVariable Integer id){
+    public ModelStrategyPO selectById(@PathVariable Long id){
         ModelStrategyPO modelStrategyPO=modelStrategyService.selectById(id);
         return modelStrategyPO;
     }

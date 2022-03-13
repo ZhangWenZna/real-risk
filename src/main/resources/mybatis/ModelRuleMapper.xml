@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.zwz.jxone.dao.mapper.ModelRuleMapper">
-    <select id="selectById" resultType="com.zwz.jxone.po.ModelRulePO">
+    <select id="selectById" resultType="com.zwz.jxone.po.ModelRulePO" >
         select * from model_rule where id = #{id}
     </select>
 
@@ -13,16 +13,20 @@
     </delete>
 
     <!--修改数据-->
-    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelRulePO">
+    <update id="updateById" parameterType="com.zwz.jxone.po.ModelRulePO">
         update model_rule set MODEL_ID=#{modelId},strategy_id=#{strategyId},NAME=#{name},field_Name=#{fieldName},SCRIPTS=#{scripts},
         INIT_SCORE=#{initScore},BASE_NUM=#{baseNum},OPERATOR=#{operator},RATE=#{rate},STATUS=#{stayus},RULE_DEFINITION=#{ruleDefinition}
         where ID=#{id}
-    </insert>
+    </update>
     <!--插入数据-->
-    <insert id="insert" parameterType="com.zwz.jxone.po.ModelRulePO">
+    <insert id="insert"  parameterType="com.zwz.jxone.po.ModelRulePO">
         insert into model_rule(MODEL_ID,strategy_id,NAME,field_Name,SCRIPTS,INIT_SCORE,BASE_NUM,OPERATOR,RATE,STATUS,RULE_DEFINITION)
         values(#{modelId},#{strategyId},#{name},#{fieldName},#{scripts},#{initScore},#{baseNum},#{operator}
         ,#{rate},#{stayus},#{ruleDefinition})
     </insert>
+
+    <select id="StrategyReq" resultType="java.util.List">
+        select  * from model_rule  where strategy_id = #{strategyId}
+    </select>
 
 </mapper>

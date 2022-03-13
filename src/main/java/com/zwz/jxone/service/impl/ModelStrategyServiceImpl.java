@@ -1,6 +1,6 @@
 package com.zwz.jxone.service.impl;
 
-import com.zwz.jxone.mapper.ModelStrategyMapper;
+import com.zwz.jxone.dao.mapper.ModelStrategyMapper;
 import com.zwz.jxone.po.ModelStrategyPO;
 import com.zwz.jxone.service.ModelStrategyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     }
 
     @Override
-    public ModelStrategyPO deleteById(Integer id) {
+    public ModelStrategyPO deleteById(Long id) {
         return modelStrategyMapper.deleteById(id);
     }
 
@@ -27,7 +27,7 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     }
 
     @Override
-    public ModelStrategyPO selectById(Integer id) {
+    public ModelStrategyPO selectById(Long id) {
         return modelStrategyMapper.selectById(id);
     }
 }

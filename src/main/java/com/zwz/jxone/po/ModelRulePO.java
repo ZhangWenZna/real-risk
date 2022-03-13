@@ -8,15 +8,15 @@ public class ModelRulePO {
     /**
      * 用户ID，主键
      */
-    private Integer id;
+    private Long id;
     /**
      * 模型ID
      */
-    private Integer modelId;
+    private Long modelId;
     /**
      * 激活ID
      */
-    private Integer strategyId;
+    private Long strategyId;
     /**
      * 名称
      */
@@ -32,11 +32,11 @@ public class ModelRulePO {
     /**
      * 初始分数
      */
-    private Integer initScore;
+    private Long initScore;
     /**
      * 基数
      */
-    private Integer baseNum;
+    private Long baseNum;
     /**
      * 运算符
      */
@@ -44,11 +44,11 @@ public class ModelRulePO {
     /**
      * 比例
      */
-    private Integer rate;
+    private Long rate;
     /**
      * 状态
      */
-    private Integer stayus;
+    private Long stayus;
     /**
      * 规则引擎
      */
@@ -64,7 +64,7 @@ public class ModelRulePO {
 
     public ModelRulePO(){}
 
-    public ModelRulePO(Integer id, Integer modelId, Integer strategyId, String name, String fieldName, String scripts, Integer initScore, Integer baseNum, String operator, Integer rate, Integer stayus, String ruleDefinition, Timestamp createTime, Timestamp updataTime) {
+    public ModelRulePO(Long id, Long modelId, Long strategyId, String name, String fieldName, String scripts, Long initScore, Long baseNum, String operator, Long rate, Long stayus, String ruleDefinition, Timestamp createTime, Timestamp updataTime) {
 
         this.id = id;
         this.modelId = modelId;
@@ -82,27 +82,27 @@ public class ModelRulePO {
         this.updataTime = updataTime;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer getModelId() {
+    public Long getModelId() {
         return modelId;
     }
 
-    public void setModelId(Integer modelId) {
+    public void setModelId(Long modelId) {
         this.modelId = modelId;
     }
 
-    public Integer getStrategyId() {
+    public Long getStrategyId() {
         return strategyId;
     }
 
-    public void setStrategyId(Integer strategyId) {
+    public void setStrategyId(Long strategyId) {
         this.strategyId = strategyId;
     }
 
@@ -130,19 +130,19 @@ public class ModelRulePO {
         this.scripts = scripts;
     }
 
-    public Integer getInitScore() {
+    public Long getInitScore() {
         return initScore;
     }
 
-    public void setInitScore(Integer initScore) {
+    public void setInitScore(Long initScore) {
         this.initScore = initScore;
     }
 
-    public Integer getBaseNum() {
+    public Long getBaseNum() {
         return baseNum;
     }
 
-    public void setBaseNum(Integer baseNum) {
+    public void setBaseNum(Long baseNum) {
         this.baseNum = baseNum;
     }
 
@@ -154,19 +154,19 @@ public class ModelRulePO {
         this.operator = operator;
     }
 
-    public Integer getRate() {
+    public Long getRate() {
         return rate;
     }
 
-    public void setRate(Integer rate) {
+    public void setRate(Long rate) {
         this.rate = rate;
     }
 
-    public Integer getStayus() {
+    public Long getStayus() {
         return stayus;
     }
 
-    public void setStayus(Integer stayus) {
+    public void setStayus(Long stayus) {
         this.stayus = stayus;
     }
 

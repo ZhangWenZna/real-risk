@@ -4,19 +4,21 @@ import com.zwz.jxone.po.ModelRulePO;
 import org.springframework.data.relational.core.sql.In;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * ming
  */
 @Repository
 public interface ModelRuleMapper {
 
-  Integer insert(ModelRulePO modelRulePO);
+  ModelRulePO insert(ModelRulePO modelRulePO);
 
   ModelRulePO selectById(Long id);
 
   ModelRulePO updateById(ModelRulePO modelRulePO);
-  Integer deleteById(Long id);
+  ModelRulePO deleteById(Long id);
 
 
-
+  List<ModelRulePO> listRulesByStrategyId(Integer strategyId);
 }

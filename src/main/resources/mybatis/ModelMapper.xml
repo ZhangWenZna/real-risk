@@ -8,16 +8,16 @@
         insert into model(MODEL_NAME,LABEL,STATUS) value(#{modelName},#{label},#{status})
     </insert>
     <!--修改数据-->
-    <insert id="updateById" parameterType="com.zwz.jxone.po.ModelPO">
+    <update id="updateById" parameterType="com.zwz.jxone.po.ModelPO">
         update model set MODEL_ID=#{modelId},LABEL=#{label},STATUS=#{status} ID=#{id}
-    </insert>
+    </update>
     <!--删除数据-->
     <delete id="deleteById" parameterType="java.lang.Integer">
         delete from model where ID=#{id}
     </delete>
     <!--查找数据-->
-    <insert id="selectById" parameterType="java.lang.Integer">
+    <select id="selectById" parameterType="java.lang.Integer">
         seleect * from model where ID=#{id}
-    </insert>
+    </select>
 
 </mapper>

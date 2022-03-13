@@ -18,7 +18,7 @@ public class ModelController {
   private ModelService modelService;
 
   @RequestMapping(method = RequestMethod.GET)
-  public ModelPO selectById(@PathVariable Integer id){
+  public ModelPO selectById(@PathVariable Long id){
     ModelPO modelPO = modelService.selectById(id);
     return modelPO;
   }
@@ -38,7 +38,7 @@ public class ModelController {
 
 
   @RequestMapping(method = RequestMethod.DELETE)
-  public ModelPO deleteModelById(@RequestBody Integer id){
+  public ModelPO deleteModelById(@RequestBody Long id){
     ModelPO modelPO=modelService.deleteById(id);
     return modelPO;
   }

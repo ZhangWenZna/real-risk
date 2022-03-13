@@ -1,6 +1,6 @@
 package com.zwz.jxone.service.impl;
 
-import com.zwz.jxone.mapper.ModelRuleMapper;
+import com.zwz.jxone.dao.mapper.ModelRuleMapper;
 import com.zwz.jxone.po.ModelRulePO;
 import com.zwz.jxone.service.ModelRuleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,11 +16,12 @@ public class ModelRuleServiceImpl implements ModelRuleService {
 
     @Override
     public ModelRulePO insert(ModelRulePO modelRulePo) {
+
         return modelRuleMapper.insert(modelRulePo);
     }
 
     @Override
-    public ModelRulePO deleteById(Integer id) {
+    public ModelRulePO deleteById(Long id) {
         return modelRuleMapper.deleteById(id);
     }
 
@@ -31,7 +32,7 @@ public class ModelRuleServiceImpl implements ModelRuleService {
     }
 
     @Override
-    public ModelRulePO selectById(Integer id) {
+    public ModelRulePO selectById(Long id) {
         return modelRuleMapper.selectById(id);
     }
 

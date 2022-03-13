@@ -1,6 +1,6 @@
 package com.zwz.jxone.service.impl;
 
-import com.zwz.jxone.mapper.ModelMapper;
+import com.zwz.jxone.dao.mapper.ModelMapper;
 import com.zwz.jxone.po.ModelPO;
 import com.zwz.jxone.service.ModelService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public ModelPO deleteById(Integer id) {
+    public ModelPO deleteById(Long id) {
         return modelMapper.deleteById(id);
     }
 
@@ -27,7 +27,7 @@ public class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public ModelPO selectById(Integer id) {
+    public ModelPO selectById(Long id) {
         return modelMapper.selectById(id);
     }
 }
