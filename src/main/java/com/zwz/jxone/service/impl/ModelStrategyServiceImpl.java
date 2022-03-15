@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ModelStrategyServiceImpl implements ModelStrategyService {
 
-    @Autowired
+    @Autowired(required = false)
     ModelStrategyMapper modelStrategyMapper;
     @Override
     public ModelStrategyPO insert(ModelStrategyPO modelStrategyPO) {

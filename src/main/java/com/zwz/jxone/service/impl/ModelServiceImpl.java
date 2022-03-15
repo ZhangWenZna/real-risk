@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ModelServiceImpl implements ModelService {
-    @Autowired
+    @Autowired(required = false)
     ModelMapper modelMapper;
 
     @Override

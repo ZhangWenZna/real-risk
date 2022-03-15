@@ -10,7 +10,7 @@ public class ModelPO {
     /**
      * id主键
      */
-    private Long id;
+    private Integer id;
     /**
      * 模型名称
      */
@@ -35,7 +35,7 @@ public class ModelPO {
     public ModelPO() {
     }
 
-    public ModelPO(Long id, String modelName, String label, String status, LocalDate createTime, LocalDate updataTime) {
+    public ModelPO(Integer id, String modelName, String label, String status, LocalDate createTime, LocalDate updataTime) {
         this.id = id;
         this.modelName = modelName;
         this.label = label;
@@ -44,11 +44,11 @@ public class ModelPO {
         this.updataTime = updataTime;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

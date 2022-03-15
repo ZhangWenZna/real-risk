@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 public class ModelRuleServiceImpl implements ModelRuleService {
-    @Autowired
+    @Autowired(required = false)
     ModelRuleMapper modelRuleMapper;
 
 

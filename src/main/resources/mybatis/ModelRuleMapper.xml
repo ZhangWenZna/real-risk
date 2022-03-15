@@ -25,7 +25,7 @@
         ,#{rate},#{stayus},#{ruleDefinition})
     </insert>
 
-    <select id="StrategyReq" resultType="java.util.List">
+    <select id="listRulesByStrategyId" resultType="java.util.List">
         select  * from model_rule  where strategy_id = #{strategyId}
     </select>
 
