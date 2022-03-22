@@ -17,7 +17,7 @@ public class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public ModelPO deleteById(Long id) {
+    public ModelPO deleteById(Integer id) {
         return modelMapper.deleteById(id);
     }
 
@@ -27,7 +27,7 @@ public class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public ModelPO selectById(Long id) {
+    public ModelPO selectById(Integer id) {
         return modelMapper.selectById(id);
     }
 }

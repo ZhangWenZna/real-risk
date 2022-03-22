@@ -17,7 +17,7 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     }
 
     @Override
-    public ModelStrategyPO deleteById(Long id) {
+    public ModelStrategyPO deleteById(Integer id) {
         return modelStrategyMapper.deleteById(id);
     }
 
@@ -27,7 +27,7 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     }
 
     @Override
-    public ModelStrategyPO selectById(Long id) {
+    public ModelStrategyPO selectById(Integer id) {
         return modelStrategyMapper.selectById(id);
     }
 }

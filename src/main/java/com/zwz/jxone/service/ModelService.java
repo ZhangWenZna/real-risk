@@ -10,7 +10,7 @@ public interface ModelService {
     /**
      * 删除
      */
-    ModelPO deleteById(Long id);
+    ModelPO deleteById(Integer id);
     /**
      * 修改
      */
@@ -18,6 +18,6 @@ public interface ModelService {
     /**
      * 查找
      */
-    ModelPO selectById(Long id);
+    ModelPO selectById(Integer id);
 
 }

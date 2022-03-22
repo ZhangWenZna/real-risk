@@ -14,10 +14,10 @@ public interface ModelRuleMapper {
 
   ModelRulePO insert(ModelRulePO modelRulePO);
 
-  ModelRulePO selectById(Long id);
+  ModelRulePO selectById(Integer id);
 
   ModelRulePO updateById(ModelRulePO modelRulePO);
-  ModelRulePO deleteById(Long id);
+  ModelRulePO deleteById(Integer id);
 
 
   List<ModelRulePO> listRulesByStrategyId(Integer strategyId);

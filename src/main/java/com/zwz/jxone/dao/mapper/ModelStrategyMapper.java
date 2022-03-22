@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ModelStrategyMapper {
     ModelStrategyPO insert(ModelStrategyPO modelStrategyPO);
-    ModelStrategyPO selectById(Long id);
+    ModelStrategyPO selectById(Integer id);
     ModelStrategyPO updateById(ModelStrategyPO modelRulePO);
-    ModelStrategyPO deleteById(Long id);
+    ModelStrategyPO deleteById(Integer id);
 }

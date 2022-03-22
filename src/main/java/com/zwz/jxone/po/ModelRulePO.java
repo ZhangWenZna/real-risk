@@ -1,10 +1,11 @@
 package com.zwz.jxone.po;
 import java.sql.Timestamp;
+import java.io.Serializable;
 
 /**
  * 预处理字段表
  */
-public class ModelRulePO {
+public class ModelRulePO implements Serializable{
     /**
      * 用户ID，主键
      */

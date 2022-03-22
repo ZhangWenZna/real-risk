@@ -1,11 +1,12 @@
 package com.zwz.jxone.po;
 
 import java.sql.Timestamp;
+import java.io.Serializable;
 
 /**
  * 策略表
  */
-public class ModelStrategyPO {
+public class ModelStrategyPO implements Serializable{
     /**
      * id主键
      */

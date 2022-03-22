@@ -14,7 +14,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.zwz.jxone.mapper",
+@MapperScan(basePackages = "com.zwz.jxone.dao.mapper",
         sqlSessionFactoryRef = "sqlSessionFactory")
 public class MybatisConfig {
 

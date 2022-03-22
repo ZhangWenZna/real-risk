@@ -1,12 +1,13 @@
 package com.zwz.jxone.po;
 
 import java.sql.Timestamp;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  * 模型表
  */
-public class ModelPO {
+public class ModelPO implements Serializable{
     /**
      * id主键
      */

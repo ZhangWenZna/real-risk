@@ -10,7 +10,7 @@ public interface ModelStrategyService {
     /**
      * 删除
      */
-    ModelStrategyPO deleteById(Long id);
+    ModelStrategyPO deleteById(Integer id);
     /**
      * 修改
      */
@@ -18,5 +18,5 @@ public interface ModelStrategyService {
     /**
      * 查找
      */
-    ModelStrategyPO selectById(Long id);
+    ModelStrategyPO selectById(Integer id);
 }

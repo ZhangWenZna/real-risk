@@ -21,7 +21,7 @@ public class ModelRuleServiceImpl implements ModelRuleService {
     }
 
     @Override
-    public ModelRulePO deleteById(Long id) {
+    public ModelRulePO deleteById(Integer id) {
         return modelRuleMapper.deleteById(id);
     }
 
@@ -32,7 +32,7 @@ public class ModelRuleServiceImpl implements ModelRuleService {
     }
 
     @Override
-    public ModelRulePO selectById(Long id) {
+    public ModelRulePO selectById(Integer id) {
         return modelRuleMapper.selectById(id);
     }
 

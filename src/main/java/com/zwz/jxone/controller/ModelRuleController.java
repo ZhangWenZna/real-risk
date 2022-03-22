@@ -15,7 +15,7 @@ public class ModelRuleController {
     @Autowired
     private ModelRuleService modelRuleService;
     @RequestMapping(method = RequestMethod.GET)
-    public ModelRulePO selectById(@PathVariable Long id){
+    public ModelRulePO selectById(@PathVariable Integer id){
         ModelRulePO modelRulePO=modelRuleService.selectById(id);
         return modelRulePO;
     }
@@ -34,7 +34,7 @@ public class ModelRuleController {
 
 
     @RequestMapping(method = RequestMethod.DELETE)
-    public ModelRulePO deleteModelRuleById(@RequestBody Long id){
+    public ModelRulePO deleteModelRuleById(@RequestBody Integer id){
         ModelRulePO modelRulePOs=modelRuleService.deleteById(id);
 
         return modelRulePOs;
