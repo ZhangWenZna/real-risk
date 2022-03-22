@@ -1,7 +1,6 @@
 package com.zwz.jxone;
 
 import com.zwz.jxone.po.ModelPO;
-import com.zwz.jxone.po.ModelRulePO;
 import com.zwz.jxone.service.ModelRuleService;
 import com.zwz.jxone.service.ModelService;
 import org.junit.jupiter.api.Test;
