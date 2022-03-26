@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@Controller
+@RequestMapping(path = "/modelStrategies")
 public class ModelStrategyController {
     @Autowired
     private ModelStrategyService modelStrategyService;
