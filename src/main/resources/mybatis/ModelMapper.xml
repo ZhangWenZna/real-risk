@@ -16,8 +16,8 @@
         delete from model where ID=#{id}
     </delete>
     <!--查找数据-->
-    <select id="selectById" parameterType="java.lang.Integer">
-        seleect * from model where ID=#{id}
+    <select id="selectById" parameterType="java.lang.Integer" resultType="com.zwz.jxone.po.ModelPO">
+        select * from model where ID=#{id}
     </select>
 
 </mapper>
