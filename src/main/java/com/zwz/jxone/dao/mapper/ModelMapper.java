@@ -9,8 +9,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ModelMapper {
-    Integer insertMode();
-
     ModelPO selectById(Integer id);
     ModelPO updateById(ModelPO modelPO);
     ModelPO deleteById(Integer id);

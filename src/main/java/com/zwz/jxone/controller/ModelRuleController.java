@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path ="ModelRules")
+@RequestMapping(path ="modelRules")
 public class ModelRuleController {
     @Autowired
     private ModelRuleService modelRuleService;
