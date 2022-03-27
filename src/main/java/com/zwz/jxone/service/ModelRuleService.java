@@ -24,4 +24,6 @@ public interface ModelRuleService {
     ModelRulePO selectById(Integer id);
 
   List<ModelRulePO> listRulesByStrategyId(Integer strategyId);
+
+
 }
