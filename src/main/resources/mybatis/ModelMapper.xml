@@ -9,7 +9,7 @@
     </insert>
     <!--修改数据-->
     <update id="updateById" parameterType="com.zwz.jxone.po.ModelPO">
-        update model set MODEL_ID=#{modelId},LABEL=#{label},STATUS=#{status} ID=#{id}
+        update model set MODEL_ID=#{modelId},LABEL=#{label},STATUS=#{status} where ID=#{id}
     </update>
     <!--删除数据-->
     <delete id="deleteById" parameterType="java.lang.Integer">

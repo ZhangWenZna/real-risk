@@ -26,6 +26,8 @@ public class ScoreController {
   @GetMapping(path = "/score")
   public Integer getScore(@RequestParam Integer modelId,@RequestParam(required = false) Integer uid){
     //1：通过uid查询用户的基本信息，比如说年龄，收入等
+
+
     //2：通过modelId找到策略集合
     //3: 通过策略集合找到规则
     //4:判断当前的用户是否满足规则，返回规则分
