@@ -2,6 +2,8 @@ package com.zwz.jxone.service;
 
 import com.zwz.jxone.po.ModelStrategyPO;
 
+import java.util.List;
+
 public interface ModelStrategyService {
     /**
      *添加
@@ -19,4 +21,6 @@ public interface ModelStrategyService {
      * 查找
      */
     ModelStrategyPO selectById(Integer id);
+
+    List<ModelStrategyPO> listStrategyByModelId(Integer modelId);
 }

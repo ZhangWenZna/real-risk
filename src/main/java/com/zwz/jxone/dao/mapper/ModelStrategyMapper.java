@@ -3,6 +3,8 @@ package com.zwz.jxone.dao.mapper;
 import com.zwz.jxone.po.ModelStrategyPO;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * ming
  */
@@ -12,4 +14,5 @@ public interface ModelStrategyMapper {
     ModelStrategyPO selectById(Integer id);
     ModelStrategyPO updateById(ModelStrategyPO modelRulePO);
     ModelStrategyPO deleteById(Integer id);
+    List<ModelStrategyPO> listStrategyByModelId(Integer modelId);
 }

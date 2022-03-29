@@ -6,6 +6,8 @@ import com.zwz.jxone.service.ModelStrategyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ModelStrategyServiceImpl implements ModelStrategyService {
 
@@ -29,5 +31,10 @@ public class ModelStrategyServiceImpl implements ModelStrategyService {
     @Override
     public ModelStrategyPO selectById(Integer id) {
         return modelStrategyMapper.selectById(id);
+    }
+
+    @Override
+    public List<ModelStrategyPO> listStrategyByModelId(Integer modelId) {
+        return modelStrategyMapper.listStrategyByModelId(modelId);
     }
 }
