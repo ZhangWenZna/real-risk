@@ -7,6 +7,8 @@ import com.zwz.jxone.service.ModelRuleService;
 import com.zwz.jxone.service.ModelService;
 import com.zwz.jxone.service.ModelStrategyService;
 import com.zwz.jxone.service.UserService;
+import com.zwz.jxone.util.GroovyUtils;
+import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(path = "/models/rules")
@@ -47,9 +50,23 @@ public class ScoreController {
 
     //4:判断当前的用户是否满足规则，返回规则分
     for (ModelRulePO modelRulePO:modelRulePOS){
-
+      checkActivationScript(modelRulePO.getRuleDefinition(),null,null);
     }
     return 0;
 
   }
+
+
+
+  private Boolean checkActivationScript(String ruleScript, Map data, Map<String, Object> dataCollectionMap) {
+    Object[] args = {data, dataCollectionMap};
+    Boolean ret = false;
+    try {
+      ret = (Boolean) GroovyUtils.invokeMethod(ruleScript, "check", args);
+    } catch (Exception e) {
+     e.printStackTrace();
+    }
+    return ret;
+  }
+
 }
