@@ -8,7 +8,7 @@ import com.zwz.jxone.service.ModelService;
 import com.zwz.jxone.service.ModelStrategyService;
 import com.zwz.jxone.service.UserService;
 import com.zwz.jxone.util.GroovyUtils;
-import groovy.util.logging.Slf4j;
+//import groovy.util.logging.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
